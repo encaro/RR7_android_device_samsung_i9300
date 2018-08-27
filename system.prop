@@ -13,3 +13,6 @@ ro.lcd_min_brightness=20
 
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
+
+# sdcardfs
+ro.sys.sdcardfs=true
