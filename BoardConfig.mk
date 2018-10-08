@@ -15,6 +15,9 @@
 #
 include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
+# Binder API version
+TARGET_USES_64_BIT_BINDER := true
+
 # Wifi
 WIFI_DRIVER_MODULE_PATH :=
 
