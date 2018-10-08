@@ -56,6 +56,9 @@ RECOVERY_FSTAB_VERSION := 2
 # PowerHAL
 TARGET_POWERHAL_VARIANT := pegasusq
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Selinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/i9300/selinux
