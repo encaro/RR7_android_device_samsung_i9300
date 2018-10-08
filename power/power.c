@@ -53,14 +53,14 @@ static int sysfs_write_str(char *path, char *s) {
     fd = open(path, O_WRONLY);
     if (fd < 0) {
         strerror_r(errno, buf, sizeof(buf));
-        ALOGE("Error opening %s: %s\n", path, buf);
+        /*ALOGE("Error opening %s: %s\n", path, buf);*/
         return -1 ;
     }
 
     len = write(fd, s, strlen(s));
     if (len < 0) {
         strerror_r(errno, buf, sizeof(buf));
-        ALOGE("Error writing to %s: %s\n", path, buf);
+        /*ALOGE("Error writing to %s: %s\n", path, buf);*/
         ret = -1;
     }
 
