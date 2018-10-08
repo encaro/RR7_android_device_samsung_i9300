@@ -87,6 +87,11 @@ on fs
     swapon_all /fstab.smdk4x12
 
 on boot
+
+# Lower maximum frequency when screen is off
+    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/screen_off_max_freq
+    write /sys/devices/system/cpu/cpu0/cpufreq/screen_off_max_freq 700000
+
 # cbd
 service cpboot-daemon /system/bin/cbd -d
     class main
