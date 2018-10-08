@@ -16,3 +16,6 @@ ro.egl.destroy_after_detach=true
 
 # Disable blitting in HWC
 persist.hwc.bltpolicy=0
+
+# sdcardfs
+ro.sys.sdcardfs=true
